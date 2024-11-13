@@ -152,11 +152,3 @@ To include CSS and JavaScript in your HTML file, you use the `<link>` and `<scri
   </body>
 </html>
 ```
-
-### Inline CSS
-
-You can add inline CSS directly in the <style> tag inside the <head> section.
-
-```html
-
-```

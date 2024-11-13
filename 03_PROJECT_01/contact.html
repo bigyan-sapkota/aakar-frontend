@@ -4,67 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Contact</title>
   </head>
   <body>
-    <!-- box containing: logo, navigation, button -->
-    <section class="header">
+    <!-- SECTION : Logo and navigation-->
+    <header>
       <!-- logo -->
       <a
-        href=""
+        href="./index.html"
         class="nav-item uppercase"
         style="font-size: 24px; font-weight: 700"
         >Big<span style="color: green">yan.</span></a
       >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
       <!-- navigation -->
-      <a href="" class="nav-item">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="" class="nav-item">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="./about.html" class="nav-item">About</a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="./projects.html" class="nav-item">Projects</a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-      <a href="">
+      <a href="./contact.html">
         <button>Contact</button>
       </a>
-    </section>
+    </header>
 
     <hr />
-    <!-- Form -->
-    <section>
-      <form novalidate>
-        <!-- Name input field -->
-        <div>
-          <label>Full Name : </label>
+
+    <main>
+      <!-- SECTION : Form -->
+      <section>
+        <h4>Send Me a Message :</h4>
+        <form novalidate>
+          <!-- Name input field -->
+          <div>
+            <label>Full Name : </label>
+            <br />
+            <input type="text" placeholder="Enter Your Full Name..." />
+          </div>
+
+          <!-- Email input field -->
+          <div>
+            <label>Email : </label><br />
+            <input type="email" placeholder="Enter Your Email..." />
+          </div>
+
+          <!-- Phone number input field -->
+          <div>
+            <label>Phone Number : </label><br />
+            <input type="text" placeholder="Enter Your Phone Number..." />
+          </div>
+
           <br />
-          <input type="text" placeholder="Enter Your Full Name..." />
-        </div>
 
-        <!-- Email input field -->
-        <div>
-          <label>Email : </label><br />
-          <input type="email" placeholder="Enter Your Email..." />
-        </div>
-
-        <!-- Phone number input field -->
-        <div>
-          <label>Phone Number : </label><br />
-          <input type="text" placeholder="Enter Your Phone Number..." />
-        </div>
-
-        <br />
-
-        <div>
-          <input type="submit" value="Send Message" />
-          <input type="reset" value="Clear" />
-        </div>
-      </form>
-    </section>
+          <div>
+            <input type="submit" value="Send Message" />
+            <input type="reset" value="Clear" />
+          </div>
+        </form>
+      </section>
+    </main>
 
     <hr />
 
-    <!-- SECTION : 5 -> FOOTER -->
-    <section>
+    <!-- SECTION : footer -->
+    <footer>
       <a
-        href=""
+        href="./index.html"
         class="nav-item uppercase"
         style="font-size: 24px; font-weight: 700"
         >Big<span style="color: green">yan.</span></a
@@ -76,10 +85,13 @@
         with JavaScript.
       </p>
 
+      <hr />
+
       <div>
         <!-- navigation -->
-        <a href="" class="nav-item">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="" class="nav-item">Projects</a>
+        <a href="./about.html" class="nav-item">About</a
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="./projects.html" class="nav-item">Projects</a>
       </div>
 
       <hr />
@@ -89,7 +101,7 @@
         &copy; Copyright all rights reserved by <strong>Bigyan</strong>
         <span id="currentYear"></span>
       </p>
-    </section>
+    </footer>
 
     <script src="./assets/js/script.js"></script>
   </body>

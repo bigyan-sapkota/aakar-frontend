@@ -4,61 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>About</title>
+
+    <title>About - Bigyan Sapkota</title>
   </head>
   <body>
-    <!-- box containing: logo, navigation, button -->
-    <section>
+    <!-- SECTION : Logo and navigation-->
+    <header>
       <!-- logo -->
       <a
-        href=""
+        href="./index.html"
         class="nav-item uppercase"
         style="font-size: 24px; font-weight: 700"
         >Big<span style="color: green">yan.</span></a
       >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
       <!-- navigation -->
-      <a href="" class="nav-item">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="" class="nav-item">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="./about.html" class="nav-item active-nav">About</a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="./projects.html" class="nav-item">Projects</a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-      <a href="">
+      <!-- contact button -->
+      <a href="./contact.html">
         <button>Contact</button>
       </a>
-    </section>
+    </header>
+
+    <hr />
+    <main>
+      <!-- SECTION : About Me -->
+      <section>
+        <h4>About Me :</h4>
+        <p>
+          I am very keen and interested front end developer. I am always
+          encouraged to learn new things and improve my knowledge. I love
+          working with JavaScript.
+        </p>
+      </section>
+      <hr />
+
+      <!-- SECTION : Skills -->
+      <section>
+        <h4>Skills :</h4>
+
+        <label for="html">HTML</label>
+        <meter id="html" value="8" min="0" max="10"></meter><br />
+
+        <label for="css">CSS</label>
+        <meter id="css" value="0.8"></meter><br />
+
+        <label for="js">js</label>
+        <meter id="js" value="0.6"></meter>
+      </section>
+    </main>
 
     <hr />
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I am very keen and interested front end developer. I am always
-        encouraged to learn new things and improve my knowledge. I love working
-        with JavaScript.
-      </p>
-    </section>
-    <hr />
-
-    <!-- SECTION : 3 -> Skills -->
-    <section>
-      <h2>SKILLS:</h2>
-
-      <label for="html">HTML</label>
-      <meter id="html" value="8" min="0" max="10"></meter><br />
-
-      <label for="css">CSS</label>
-      <meter id="css" value="0.8"></meter><br />
-
-      <label for="js">js</label>
-      <meter id="js" value="0.6"></meter>
-    </section>
-
-    <hr />
-
-    <!-- SECTION : 5 -> FOOTER -->
-    <section>
+    <!-- SECTION : footer -->
+    <footer>
       <a
-        href=""
+        href="./index.html"
         class="nav-item uppercase"
         style="font-size: 24px; font-weight: 700"
         >Big<span style="color: green">yan.</span></a
@@ -70,10 +78,13 @@
         with JavaScript.
       </p>
 
+      <hr />
+
       <div>
         <!-- navigation -->
-        <a href="" class="nav-item">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="" class="nav-item">Projects</a>
+        <a href="./about.html" class="nav-item">About</a
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="./projects.html" class="nav-item">Projects</a>
       </div>
 
       <hr />
@@ -83,7 +94,7 @@
         &copy; Copyright all rights reserved by <strong>Bigyan</strong>
         <span id="currentYear"></span>
       </p>
-    </section>
+    </footer>
 
     <script src="./assets/js/script.js"></script>
   </body>
