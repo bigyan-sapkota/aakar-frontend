@@ -1,0 +1,88 @@
+/* * {
+  background-color: blue;
+  color: red;
+}
+
+body {
+  background-color: white;
+} */
+
+/* p {
+  color: red;
+}
+
+#blue-text {
+  color: blue;
+}
+
+.green-text {
+  color: green;
+} */
+
+/* a:hover {
+  color: red;
+}
+
+button {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: black;
+  color: red;
+  cursor: pointer;
+} */
+
+/* input {
+  background-color: gray;
+}
+
+input[type="email"] {
+  background-color: red;
+} */
+
+/* p::first-line {
+  color: red;
+}
+
+p::first-letter {
+  font-size: 30px;
+}
+
+input::placeholder {
+  color: blue;
+} */
+
+/* div p {
+  color: red;
+} */
+/* 
+.box-with-red-text p {
+  color: red;
+} */
+
+/* ul > li {
+  list-style-type: circle;
+} */
+
+/* h1 + p {
+  color: red;
+} */
+
+/* h1 ~ p {
+  color: red;
+} */
+
+#text-red {
+  /* a means opacity -> Range is 0 - 1 */
+  /* background-color: rgba(0, 0, 0, 1); */
+  /* color: rgb(255, 255, 255); */
+  /* color: #rrggbb; */
+  /* color: #000000;
+  color: #000; */
+  /* Range: hue(0-360) , saturation : 0% - 100%, lightness: 0% - 100% */
+  /* color: hsla(120, 100%, 50%, 0.5); */
+}

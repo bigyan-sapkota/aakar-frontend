@@ -157,7 +157,7 @@ ul > li {
 }
 ```
 
-**Explanation:** Styles only the direct <li> children of <ul> with a square bullet.
+**Explanation:** Styles only the direct `<li>` children of `<ul>` with a square bullet.
 
 ### 10. Adjacent Sibling Selector (`element1 + element2`)
 
