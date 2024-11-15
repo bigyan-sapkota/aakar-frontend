@@ -5,6 +5,7 @@ Welcome to the **frontend development**! This repository is a resource hub and l
 ## 🎯 Program Overview
 
 This program is designed to guide mentees through:
+
 - **Foundations**: HTML, CSS, and JavaScript basics
 - **React Essentials**: Building interactive UIs and understanding React fundamentals
 - **Project-Based Learning**: Applying skills through hands-on projects
@@ -12,15 +13,20 @@ This program is designed to guide mentees through:
 ## 📋 Learning Path
 
 1. **Foundational Web Development**
-   - HTML: Structure and semantics
-   - CSS: Styling and layout techniques
-   - JavaScript: Basics of the language, DOM manipulation, and events
+
+   - HTML: HTML tags such as `<html>`, `<head>`, `<body>`, `<title>`, `<meta>`, `<link>`, `<style>`, `<section>`, `<div>`, `<header>`, `<main>`, `<footer>`, `<nav>`, `<script>`, `<p>`, `<pre>`, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<img>`, `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dd>`, `<dt>`, `<label>`, `<progress>`, `<a>`, `<button>`, `<br>`, `<hr>`, `<form>`, `<input>`, `<textarea>` etc. tags, HTML entities, HTML attributes.
+
+   - CSS: CSS properties such as `color`, `background-color`, `box-sizing`, `width`, `height`, `margin`, `padding`, `border`.
+
+   - JavaScript: Basics of the language, DOM manipulation, and events.
 
 2. **Getting Started with React**
+
    - JSX, Components, Props, and State
    - Creating a basic React app
 
 3. **Intermediate React**
+
    - Hooks: `useState`, `useEffect`, and custom hooks
    - State management and Context API
 
