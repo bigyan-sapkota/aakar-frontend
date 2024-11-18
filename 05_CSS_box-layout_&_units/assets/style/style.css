@@ -1,0 +1,135 @@
+.border {
+  /* border-width: 4px;
+  border-color: red;
+  border-style: solid; */
+  /* dashed, dotted, solid, none */
+  /* border-style: solid; */
+  /* border-radius: 20px; */
+  border: 4px solid red;
+  /* border-radius: 30px; */
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+}
+
+.circle {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  /* border: 4px solid none; */
+  border-radius: 50%;
+}
+
+/* shorthand property */
+/* .border {
+  border: 4px solid #ff0000;
+} */
+
+/* .dummy {
+  width: fit-content;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #000;
+  margin: 20px;
+  padding-bottom: 10px;
+} */
+
+/* .box-model-example {
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #ff0000;
+} */
+
+/* .btn {
+  display: block;
+  width: 100px;
+  height: 30px;
+  background-color: green;
+  color: #fff;
+  border-radius: 18px;
+  border: none;
+  background-color: transparent;
+} */
+
+/* button:hover {
+  cursor: pointer;
+  background-color: lightgreen;
+  color: #000;
+} */
+
+.btn {
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: blue;
+  border-radius: 7px;
+  background-color: transparent;
+  padding: 7px 24px;
+  font-weight: 600;
+
+  /* padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 18px;
+  padding-left: 18px; */
+
+  /* padding: top right bottom left */
+  /* padding: 7px 24px 7px 24px; */
+
+  /* padding: top/bottom left/right */
+  /* padding: 7px 24px; */
+
+  /* padding: left/right */
+  /* padding-inline: 24px; */
+
+  /* padding: top/bottom */
+  /* padding-block: 7px; */
+
+  /* padding : top left/right bottom */
+  /* padding: 7px 18px 7px; */
+}
+/* 
+.btn:hover {
+  color: white;
+  cursor: pointer;
+  background: blue;
+} */
+
+/* html {
+  font-size: 10px;
+} */
+
+/* .parent {
+  font-size: 50px;
+} */
+
+/* .child {
+  border-width: 4px;
+  border-style: solid;
+  border-color: red;
+  font-size: 20px;
+  padding: 2rem;
+} */
+
+/* .dad {
+  border-width: 4px;
+  border-style: solid;
+  border-color: red;
+}
+
+.son {
+  box-sizing: border-box;
+  display: block;
+  border: 2px solid black;
+  background-color: green;
+  padding-inline: 20px;
+  text-decoration: none;
+  color: black;
+  width: 50%;
+}
+
+h1 {
+  height: 20lh;
+} */

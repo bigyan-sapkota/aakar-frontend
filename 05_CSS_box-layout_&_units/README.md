@@ -220,7 +220,7 @@ Absolute units are fixed and don't change based on the viewport or parent elemen
 
 Relative units scale based on other values (like the viewport or font size), making them useful for responsive design.
 
-- **em**: Relative to the font size of the nearest parent element. (1em equals the current font size).
+- **em**: Relative to the font size of the nearest parent element or the same element you are using it in. (1em equals the current font size).
 
 ```css
 .text {
@@ -275,6 +275,8 @@ These units are relative to the viewport size, making them useful for responsive
   font-size: 5vmin; /* 5% of the smaller viewport dimension */
 }
 ```
+
+- [More about vmin and vmax with example](https://www.sitepoint.com/css-viewport-units-quick-start/)
 
 ## 4. Flexible Units
 
