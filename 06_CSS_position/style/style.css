@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* #grandpa {
+  position: relative;
+  background-color: green;
+  width: 500px;
+  height: 500px;
+} */
+
+#parent {
+  /* position: relative; */
+  position: relative;
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}
+
+#child {
+  /* the container slides relative to it's original position */
+  /* position: relative; */
+
+  position: absolute;
+  right: 0;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+/* #card {
+  position: relative;
+  width: 200px;
+  height: 500px;
+  background-color: red;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+}
+
+#sab-vanda-tala {
+  position: absolute;
+  bottom: 0;
+  background-color: blue;
+} */
+
+#sct {
+  position: sticky;
+  background-color: blue;
+  top: 100px;
+  color: white;
+  width: 50px;
+  height: 20px;
+}
+
+#my-div,
+#span-2 {
+  background-color: blue;
+}
+
+#my-par,
+#span-1 {
+  background-color: red;
+}

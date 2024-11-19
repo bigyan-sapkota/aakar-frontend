@@ -23,3 +23,9 @@
 .remove-bullet {
   list-style-type: none;
 }
+
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
