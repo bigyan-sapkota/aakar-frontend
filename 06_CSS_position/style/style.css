@@ -1,8 +1,8 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 /* #grandpa {
   position: relative;
@@ -10,25 +10,25 @@
   width: 500px;
   height: 500px;
 } */
-
+/* 
 #parent {
-  /* position: relative; */
+  position: relative;
   position: relative;
   background-color: red;
   width: 300px;
   height: 300px;
-}
+} */
 
-#child {
-  /* the container slides relative to it's original position */
-  /* position: relative; */
+/* #child {
+  the container slides relative to it's original position
+  position: relative;
 
   position: absolute;
   right: 0;
   background-color: blue;
   width: 100px;
   height: 100px;
-}
+} */
 
 /* #card {
   position: relative;
@@ -48,7 +48,7 @@ img {
   background-color: blue;
 } */
 
-#sct {
+/* #sct {
   position: sticky;
   background-color: blue;
   top: 100px;
@@ -65,4 +65,108 @@ img {
 #my-par,
 #span-1 {
   background-color: red;
+} */
+
+html {
+  /* background-color: green; */
+  /* position: static; */
+}
+
+body {
+  /* border-color: red;
+  border-width: 10px;
+  border-style: solid; */
+
+  /* border: <border-width> <border-style> <borer-color>; */
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* .grandpa {
+  background-color: blue;
+  height: 25rem;
+  width: 25rem;
+}
+
+.father {
+  background-color: black;
+  height: 17rem;
+  width: 17rem;
+}
+
+.child {
+  background-color: red;
+  height: 7rem;
+  width: 7rem;
+} */
+
+/* button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: blue;
+  border: 2px solid black;
+  font-weight: 600;
+  font-size: 2rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  color: white;
+} */
+/* 
+button:hover {
+  color: black;
+  background-color: white;
+  border-color: blue;
+  cursor: pointer;
+} */
+
+/* .navigator {
+  position: sticky;
+  bottom: 0px;
+  background-color: red;
+  text-decoration: none;
+  height: 3.5rem;
+  width: 100%;
+}
+
+.navigator a {
+  text-decoration: none;
+  color: white;
+} */
+
+.card {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  background-color: red;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.glass-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+span {
+  position: absolute;
+  background-color: blue;
+  color: white;
+  bottom: 10%;
+  left: 10%;
+  z-index: 2;
 }

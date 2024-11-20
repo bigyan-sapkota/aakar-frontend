@@ -16,7 +16,7 @@ This program is designed to guide mentees through:
 
    - HTML: HTML tags such as `<html>`, `<head>`, `<body>`, `<title>`, `<meta>`, `<link>`, `<style>`, `<section>`, `<div>`, `<header>`, `<main>`, `<footer>`, `<nav>`, `<script>`, `<p>`, `<pre>`, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<img>`, `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dd>`, `<dt>`, `<label>`, `<progress>`, `<a>`, `<button>`, `<br>`, `<hr>`, `<form>`, `<input>`, `<textarea>` etc. tags, HTML entities, HTML attributes.
 
-   - CSS: CSS properties such as `color`, `background-color`, `box-sizing`, `width`, `height`, `margin`, `padding`, `border`.
+   - CSS: CSS properties such as `color`, `background-color`, `box-sizing`, `width`, `height`, `margin`, `padding`, `border`, CSS units(`rem`, `em`, `px`, `%`), CSS Position(`static`, `relative`, `absolute`, `fixed`, `sticky`).
 
    - JavaScript: Basics of the language, DOM manipulation, and events.
 
