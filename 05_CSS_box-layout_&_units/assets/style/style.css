@@ -133,7 +133,26 @@
 h1 {
   height: 20lh;
 } */
-
+/* 
 #box-layout {
   border-width: 2px;
+} */
+
+.hello {
+  /* box-sizing: content-box; */
+  box-sizing: border-box;
+  border-width: 4px;
+  height: 100px;
+  width: 200px;
+  border-style: solid;
+  border-color: red;
+
+  /* padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 10px; */
+  /* padding: 10px; */
+
+  /* I need 20px padding in left and right and 10px in top and bottom */
+  /* padding: <top-bottom> <left-right>; */
+  /* padding: 10px 20px; */
 }
