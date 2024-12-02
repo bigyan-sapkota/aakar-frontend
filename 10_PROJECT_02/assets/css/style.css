@@ -19,6 +19,7 @@ body {
   background-color: var(--background-color);
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 p,
@@ -43,10 +44,10 @@ i {
   flex-direction: column;
   justify-content: space-between;
   width: fit-content;
-  /* padding: <top> <right> <bottom> <left> */
-  padding: 2.5rem 4rem 0 1.5rem;
+  padding: 2rem;
+  padding-right: 4rem;
   height: 100vh;
-  flex-grow: 1;
+  border-right: 1px solid #8f8f8f42;
 }
 
 #logo-desktop {
@@ -55,7 +56,6 @@ i {
 
 .navigation-item {
   display: flex;
-  /* bring the items to center horizontally */
   align-items: center;
   gap: 0.75rem;
 }
@@ -174,10 +174,92 @@ i {
   object-fit: cover;
 }
 
+.reactions-save {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reactions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reactions i:first-child:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.image-like {
+  margin: 0.6rem 0 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.image-like img {
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+}
+
+.image-like p {
+  font-size: 0.85rem;
+}
+
+.name-caption .name,
+.name-caption .caption {
+  font-size: 0.8rem;
+}
+
+.name-caption .name {
+  font-weight: 600;
+}
+
+.name-caption {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.view-all-comments {
+  cursor: pointer;
+  color: var(--text-secondary);
+  margin-block: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.comment-sticker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment-sticker .post-comment {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  caret-color: var(--text-secondary);
+}
+
+.comment-sticker .post-comment::placeholder {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.comment-sticker i {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
 /* suggestions */
 #suggestions-container {
   flex-grow: 2;
+  padding-inline: 1.25rem;
 }
+
 .suggestion-profile {
   width: 3rem;
   height: 3rem;
@@ -204,6 +286,21 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.all-suggestions .suggestion-item {
+  margin-top: 1.25rem;
+}
+
+.all-suggestions .suggestion-item:first-child {
+  margin-top: 0.7rem;
+}
+
+.suggestions-title {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
 }
 
 .profile-status h5,
