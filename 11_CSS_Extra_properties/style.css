@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 2rem;
+}
+
+/* .parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: red;
+  aspect-ratio: 1;
+  box-shadow : <x-offset> <y-offset> <blur> <spread> <color>
+  box-shadow: -20px 10px 30px 5px black;
+
+  color: white;
+  font-weight: 700;
+  font-family: monospace, "sans-serif";
+} */
+
+.section-padding-x {
+  padding-inline: 1.25rem;
+}
+
+.max-width {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-direction-responsive {
+  flex-direction: column;
+}
+
+.gap {
+  gap: 0.5rem;
+}
+
+.border-4 {
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.laptop-image {
+  height: 100%;
+  width: 100%;
+
+  object-fit: contain;
+}
+
+button {
+  margin-top: 1rem;
+  border: 0px;
+  outline: 0px;
+  padding: 5px 15px;
+  background-color: green;
+  color: white;
+}
+
+h2 {
+  margin-top: 0.3rem;
+}
+
+p {
+  margin-top: 1rem;
+  max-width: 1000px;
+}
+
+@media screen and (min-width: 1280px) {
+  .flex-direction-responsive {
+    flex-direction: row;
+  }
+
+  .section-padding-x {
+    padding-inline: 5rem;
+  }
+
+  .gap {
+    gap: 1.25rem;
+  }
+}
