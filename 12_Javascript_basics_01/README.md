@@ -85,7 +85,7 @@ for (let i = 0; i < maxItems; i++) {
 
 Use `let` and `const` for cleaner, more predictable code!
 
-# Date Types
+# Data Types
 
 JavaScript has two categories of data types: primitive and non-primitive (reference types).
 
@@ -129,7 +129,6 @@ let isLoggedIn = true;
 - Example:
 
 ```javascript
-Copy code
 let x; // undefined
 ```
 
@@ -148,7 +147,6 @@ let y = null;
 - Example:
 
 ```javascript
-Copy code
 let bigNumber = 1234567890123456789012345678901234567890n;
 ```
 
