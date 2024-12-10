@@ -1,86 +1,133 @@
-// let , const , var
+// "use strict";
+// const myName = "bigyan";
 
-// let myName = "Bigyan";
-// myName = "Sunil";
-// myName = 1;
-// console.log(myName);
-
-// console.log(myName);
-
-// const a = "bigyan";
-
-// let a;
-// a = "Bigyan";
-// console.log(a);
-
-// For loop
-// for (let i = 1; i <= 10; i++) {
-//   const result = i * 2;
-//   console.log("2 * ", i, " = ", result);
-//   console.log(` 2 * ${i} = ${result}`);
+// giving default value to arguments
+// function add(a = 1, b = 2) {
+//   console.log(a + b);
 // }
+// add(undefined, 5);
 
-// while loop
-// let i;
-// i = 1;
-// // console.log(i);
-// while (i <= 5) {
-//   console.log(i);
-//   i++;
+// ARGUMENTS
+// function subtract(a, b) {
+//   console.log(a - b);
+
+//   //   to log value of a and b :
+//   console.log(a, b);
+//   console.log(arguments);
 // }
+// subtract(3, 2);
 
-// let i = 6;
-// do {
-//   console.log(i); // Outputs 0, 1, 2, 3, 4
-//   i++;
-// } while (i < 5);
+// ARROW FUNCTIONS
+// function logName() {
+//   console.log("Bigyan");
+// }
+// logName();
 
-const myArr = ["bigyan", "yugal", 3, 3.5, 10, 12, 14, "sunil"];
-const firstElem = myArr[1];
+// const logName = () => {
+//   console.log("Bigyan");
+// };
+// logName();
 
-for (let i = 0; i < myArr.length; i++) {
-  console.log(myArr[i]);
+// const add = (a, b) => {
+//   const result = a + b;
+//   return result;
+// };
+
+// const answer = add(1, 2);
+// console.log(answer);
+
+// console.log(this);
+
+// DIFFERENCE BETWEEN ARROW AND REGULAR FUNCTION
+
+// 1. Arguments --------------------------
+
+// REGULAR FUNCTION : arguments are shown
+function logName(a, b) {
+  console.log(arguments);
 }
 
-// for (let myElement of myArr) {
-//   console.log(myElement);
-// }
+logName("bigyan", "surname");
 
-// const student = { rollNo: 12, name: "Bigyan", faculty: "bit" };
-// // console.log(student.rollNo);
+// ARROW FUNCTION : arguments usage will throw error
+// Instead, we can use ...args
+const logName2 = (...args) => {
+  console.log(args);
+};
 
-// for (let myElem in student) {
-//   //   const student = { rollNo: 12, name: "Bigyan", faculty: "bit" }
-// }
+logName2("bigyan", "surname", 5, true);
 
-const fruits = ["banana", "apple", "orange", "mango"];
+// 2. Duplicate parameters ------------------
 
-fruits.forEach(function (fruit) {
-  console.log(fruit);
-});
+// REGULAR FUNCTION : you can give duplicate parameters (this will throw error in "use strict" mode)
+function regularAdd1(a, b, a) {
+  console.log(`Value of a is ${a} and value of b is ${b}`);
+}
+regularAdd1("first", "second", "third");
 
-function add(a, b) {
-  // checking if both a and b are of type number
-  if (typeof a === "number" && typeof b === "number") {
-    const result = a + b;
-    console.log(result);
-  }
+// ARROW FUNCTION : you can't use duplicate parameters
+const arrowAdd1 = (a, b, a) => {
+  console.log(`Value of a is ${a} and value of b is ${b}`);
+};
+
+// 3. HOISTING -------------------------------
+// REGULAR FUNCTION : They are hoisted on top level. They can be accessed even before their declaration
+
+// regularFunction();
+
+function regularFunction() {
+  console.log("Hello world");
 }
 
-add(2, 2);
+// ARROW FUNCTION : They are not hoisted on top level.
+// arrowFunction(); // this will throw error
+const arrowFunction = () => {
+  console.log("this is an arrow function");
+};
 
-// console.log(typeof "2");
-// console.log(typeof 3);
+// 4. this KEYWORD BINDING------------------
 
-// const num1 = 23;
-// const num2 = 23;
+// console.log(this);
 
-// if (num1 === num2) {
-//   console.log("a");
-// } else {
-//   console.log("b");
+// // REGULAR FUNCTION
+// function regularFunction2() {
+//   console.log(this);
 // }
 
-// EX. 1 : make an array and print each element using for loop
-// EX. 2 : make a function to add 2 numbers
-// EX. 3 : make an array and print each element using forEach loop
+// // ARROW FUNCTION
+// const arrowFunction2 = () => {
+//   console.log(this);
+// };
+
+// regularFunction2();
+// arrowFunction2();
+
+const student = {
+  nam: "Asim Thapa Chettri",
+  rollNo: "5",
+
+  namDekhau: function () {
+    console.log(this.nam);
+  },
+
+  namDekhaisyo: () => {
+    console.log(this);
+  },
+};
+
+// student.namDekhau();
+// student.namDekhaisyo();
+
+// 5. 'new' keyword
+// function regularFunction3(name) {
+//   this.name = name;
+//   console.log(this);
+// }
+
+// const arrowFunction3 = (color) => {
+//   this.color = color;
+//   console.log(this);
+// };
+
+// new regularFunction3("Bigyan Sapkota");
+// new arrowFunction3("red");

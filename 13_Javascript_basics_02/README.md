@@ -52,6 +52,7 @@ console.log(square(5)); // Output: 25
 ---
 
 **4. Anonymous Function**
+
 A function without a name, often used as an argument in higher-order functions like setTimeout or array.map.
 
 ```javascript
@@ -63,6 +64,7 @@ setTimeout(function () {
 ---
 
 **5. Immediately Invoked Function Expression (IIFE)**
+
 A function that runs immediately after it is defined.
 
 ```javascript
@@ -81,6 +83,7 @@ A typical function consists of:
 **2. Parameters:** Variables passed into the function, enclosed in parentheses.
 **3. Body:** The code block enclosed in curly braces {}.
 **4. Return Value:** The output of the function.
+
 Example:
 
 ```javascript
