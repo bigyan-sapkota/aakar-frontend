@@ -160,7 +160,7 @@ for (let i = 0; i < myArr.length; i++) {
 //   //   const student = { rollNo: 12, name: "Bigyan", faculty: "bit" }
 // }
 
-const fruits = ["banana", "apple", "orange", "mango"];
+const allFruits = ["banana", "apple", "orange", "mango"];
 
 fruits.forEach(function (fruit) {
   console.log(fruit);
