@@ -132,6 +132,7 @@ const student = {
 // new regularFunction3("Bigyan Sapkota");
 // new arrowFunction3("red");
 
+// class 2nd ------------------------------------------------------------
 // IIFE (Immediately Invoked Function Expressions)
 // REGULAR FUNCTION: it can be or can't be anonymous
 // (function logger() {
