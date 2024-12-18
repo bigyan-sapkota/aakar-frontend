@@ -59,9 +59,9 @@
 // allULElements[0].prepend(newListElement);
 // allULElements[0].prepend(secondNewListElement);
 
-const containerDiv = document.getElementById("container");
-const originalParagraph1 = document.getElementById("container-paragraph-1");
-const originalParagraph2 = document.getElementById("container-paragraph-2");
+// const containerDiv = document.getElementById("container");
+// const originalParagraph1 = document.getElementById("container-paragraph-1");
+// const originalParagraph2 = document.getElementById("container-paragraph-2");
 
 // console.log(containerDiv);
 
@@ -98,22 +98,76 @@ const originalParagraph2 = document.getElementById("container-paragraph-2");
 //   clickMeButton.removeAttribute("disabled");
 // }
 
-const clickMeButton = document.getElementById("click-me");
-const image1 = document.getElementById("image-1");
+// const clickMeButton = document.getElementById("click-me");
+// const image1 = document.getElementById("image-1");
 
-let isImageVisible = true;
-clickMeButton.textContent = "Hide";
+// let isImageVisible = true;
+// clickMeButton.textContent = "Hide";
 
-function buttonClickHandler() {
-  if (isImageVisible) {
-    // image visible case
-    isImageVisible = false;
-    clickMeButton.textContent = "Hide";
-    image1.style.display = "inline";
-  } else {
-    // image invisible case
-    isImageVisible = true;
-    clickMeButton.textContent = "Show";
-    image1.style.display = "none";
-  }
-}
+// function buttonClickHandler() {
+//   // when image is visible, hide it
+//   if (isImageVisible) {
+//     isImageVisible = false;
+//     clickMeButton.textContent = "Show";
+//     image1.style.display = "none";
+//   } else {
+//     // when image is not visible, show it
+//     isImageVisible = true;
+//     clickMeButton.textContent = "Hide";
+//     image1.style.display = "inline";
+//   }
+// }
+
+// button.addEventListener(event, function, options)
+
+// 1. 'click' EVENT --------------------------------------------
+// const btn = document.getElementById("btn");
+
+// btn.addEventListener("click", function () {
+//   console.log("button clicked");
+// });
+
+// 2. 'keyup' EVENT --------------------------------------------
+// const inputField = document.getElementById("ipt");
+
+// inputField.addEventListener("keyup", function (event) {
+//   console.log(`Your pressed key ${event.key} (keycode : ${event.code})`);
+// });
+
+// 3. 'submit' EVENT ------------------------------
+// const customForm = document.getElementById("custom-form");
+
+// customForm.addEventListener("submit", function (e) {
+//   e.preventDefault();
+//   console.log(e);
+//   console.log("Form submitted");
+// });
+
+// 4. 'mouseover'  and 'mouseout' EVENT ----------
+// const hoverBox = document.getElementById("hover-box");
+
+// hoverBox.addEventListener("mouseover", () => {
+//   hoverBox.style.backgroundColor = "blue";
+//   hoverBox.style.cursor = "pointer";
+// });
+
+// hoverBox.addEventListener("mouseout", () => {
+//   hoverBox.style.backgroundColor = "red";
+// });
+
+// 5. 'focus' and 'blur' EVENT -------------------
+// const nameInput = document.getElementById("name-input");
+// const fieldStatus = document.getElementById("field-status");
+// let preStatusText = "Input field is : ";
+
+// nameInput.addEventListener("focus", (e) => {
+//   fieldStatus.textContent = `${preStatusText} ${e.type}ed`;
+// });
+
+// nameInput.addEventListener("blur", (e) => {
+//   fieldStatus.textContent = `${preStatusText} ${e.type}red`;
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   console.log("hello");
+// });
