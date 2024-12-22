@@ -300,10 +300,10 @@
 //   person.greet();
 // });
 
-const person = {
-  name: "Asim",
-  age: 59,
-};
+// const person = {
+//   name: "Asim",
+//   age: 59,
+// };
 
 // for (let key in person) {
 //   console.log(`${key} : ${person[key]}`);
@@ -316,3 +316,106 @@ const person = {
 // if (Object.keys(person).length > 0) {
 //   console.log("object is not empty");
 // }
+
+// Destructuring in js
+
+// const num = [1, 2, 3, 4];
+// const [firstNum, secondNum, thirdNum, fourthNum] = num;
+// console.log(firstNum, secondNum, thirdNum, fourthNum);
+
+// skipping value
+// const [firstNum, , , fourthNum] = num;
+// console.log(fourthNum);
+
+// const numbers = [1];
+// const [first, second = 10] = numbers;
+// console.log(first);
+// console.log(second);
+
+// const person = { name: "Bigyan" };
+// destructuring and renaming
+// const { name: fullName, age: years = 30 } = person;
+// console.log(fullName, years);
+
+// destructuring nested objects
+// const person = {
+//   name: "Asim",
+//   address: {
+//     city: "Bharatpur",
+//     zip: "12340",
+//   },
+// };
+
+// const {
+//   name,
+//   address: { city, zip },
+// } = person;
+// // console.log(address)
+// console.log(city);
+
+// SPREAD OPERATOR ---------------------------------
+// const num1 = [1, 2, 3, 4];
+// const num2 = [5, 6, 7, 8];
+// const numAll = [...num1, ...num2];
+// console.log(numAll);
+
+// const person = { name: "Bigyan", age: 30 };
+// const student = { faculty: "BIT" };
+// const updatedPerson = { ...person, ...student, city: "Bharatpur" };
+// console.log(updatedPerson);
+
+// const evenNum = [2, 4, 6, 8];
+// const oddNum = [1, 3, 5, 7];
+// const allNum = [...evenNum, ...oddNum];
+
+// const extendedEvenNum = [...evenNum, 9, 10];
+// console.log(extendedEvenNum);
+// const [e1, e2, e3, e4] = evenNum;
+// const [o1, o2, o3, o4] = oddNum;
+// const allNum = [e1, o1, e2, o2, e3, o3, e4, o4];
+// console.log(allNum);
+
+// rest parameter
+// const person = { name: "bigyan", age: 30, city: "New York" };
+// const { name, ...details } = person;
+
+// console.log(details.age);
+// const student = { name: "Asim", profession: "Teacher" };
+
+// function objectLogger(obj) {
+//   console.log(obj.name, obj.profession);
+// }
+
+// function objectLogger({ name, profession }) {
+//   console.log(name, profession);
+// }
+
+// objectLogger(student);
+
+// shallow copy
+// const original = { name: "Asim", details: { age: 30, height: 6 } };
+
+// const duplicate = { ...original };
+// duplicate.details.height = 5;
+
+// console.log(original);
+
+// // deep copy
+// const anotherDuplicate = structuredClone(original);
+// anotherDuplicate.details.age = 40;
+// console.log(original);
+
+const apiDataDiv = document.getElementById("api-data");
+
+async function getApiData() {
+  const res = await fetch("https://admin.aricletech.com/api/v1/categories");
+  const resData = await res.json();
+
+  if (Object.keys(resData).length === 0) {
+    return null;
+  }
+
+  const { data, links, meta } = resData;
+  console.log(data.length);
+}
+getApiData();
