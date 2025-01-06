@@ -4,10 +4,10 @@ React.js is a JavaScript `library` for building user interfaces. It makes creati
 
 ### Why Use React?
 
-**Component-Based Architecture:** Build UI using reusable components.
-**Declarative Syntax:** Describe what the UI should look like at any given state.
-**Virtual DOM:** React updates only the changed parts of the UI, improving performance.
-**React Ecosystem:** Access to tools like React Router, Redux Toolkit, and TanStack Query.
+- **Component-Based Architecture:** Build UI using reusable components.
+- **Declarative Syntax:** Describe what the UI should look like at any given state.
+- **Virtual DOM:** React updates only the changed parts of the UI, improving performance.
+- **React Ecosystem:** Access to tools like React Router, Redux Toolkit, and TanStack Query.
 
 ---
 
