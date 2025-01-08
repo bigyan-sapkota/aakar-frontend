@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 0.4rem 1.3rem;
+  color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.3rem;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.incr-btn {
+  background-color: blue;
+  border-color: blue;
+}
+
+.incr-btn:hover {
+  background-color: white;
+  color: blue;
+}
+
+.dcr-btn {
+  margin-right: 0.5rem;
+  background-color: red;
+  border-color: red;
+}
+
+.dcr-btn:hover {
+  background-color: white;
+  color: red;
+}
+
+h1 {
+  font-family: monospace;
+}
+
+#app {
+  padding: 1rem;
+}
